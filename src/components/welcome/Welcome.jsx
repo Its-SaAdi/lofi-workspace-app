@@ -66,11 +66,11 @@ const Welcome = () => {
                     <span className="text-lg">✦</span>
                 </div>
 
-                <h1 className="text-lg font-semibold tracking-tight">
-                    Welcome to Lofi Workspace
+                <h1 className="text-xl font-semibold tracking-tight">
+                    Welcome to Lofi Workspace!
                 </h1>
 
-                <p className="mt-2 max-w-sm text-xs text-white/70 italic leading-relaxed">
+                <p className="mt-3 max-w-sm text-sm text-white/95 font-semibold leading-relaxed">
                     Your little space to focus, create, and get things done without the noise.
                 </p>
 
@@ -90,11 +90,11 @@ const Welcome = () => {
                             </div>
 
                             <div className="@min-[820px]:min-w-0">
-                                <h2 className="text-xs font-semibold">
+                                <h2 className="text-sm font-semibold">
                                     {feature.title}
                                 </h2>
 
-                                <p className="mt-1 text-[10.5px] leading-relaxed text-white @min-[820px]:mt-0.5 @min-[820px]:text-[9px] @min-[820px]:truncate">
+                                <p className="mt-0.5 text-[11px] leading-relaxed text-white/80 @min-[820px]:mt-0.5 @min-[820px]:text-[9px] @min-[820px]:truncate">
                                     {feature.description}
                                 </p>
                             </div>
@@ -116,7 +116,7 @@ const Welcome = () => {
                         A quick tip
                     </p> */}
 
-                    <p className="text-xs italic leading-relaxed text-white/70">
+                    <p className="text-xs italic leading-relaxed text-white/85">
                         Use the taskbar at the bottom to open your tools. Drag, resize, and close windows just like you would on a desktop.
                     </p>
                 </div>

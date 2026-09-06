@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { openWindow } from "./features/windows/windowSlice";
+import { setWallpaperId } from "./features/wallpaper/wallpaperSlice";
 import { BUILTIN_WALLPAPERS } from "./conf/wallpaperConf";
 import { getCustomWallpapers } from "./conf/wallpaperStorageService";
 import Clock from "./components/clock/Clock"
@@ -42,6 +43,7 @@ function App() {
     const builtin = BUILTIN_WALLPAPERS.find(wallpaper => wallpaper.id === savedId);
     if (builtin) {
       applyBackground(builtin.full);
+      dispatch(setWallpaperId(builtin.id))
       return;
     }
 
