@@ -44,7 +44,7 @@ export const songs = [
         title: "Relax Lofi Beats",
         artist: "Lofi Beats",
         duration: "2:08",
-        url: "src/assets/songs/relax-lofi-beat.mp3",
+        url: "/songs/relax-lofi-beat.mp3",
         cover: "https://picsum.photos/300?random=1"
     },
     {
@@ -52,7 +52,7 @@ export const songs = [
         title: "Neon Drizzle Lofi",
         artist: "Chillhop",
         duration: "1:49",
-        url: "src/assets/songs/neon-drizzle-lofi-jazz.mp3",
+        url: "/songs/neon-drizzle-lofi-jazz.mp3",
         cover: "https://picsum.photos/300?random=2"
     },
     {
@@ -60,7 +60,7 @@ export const songs = [
         title: "Aesthetic Lofi Vlog",
         artist: "Synthwave",
         duration: "2:32",
-        url: "src/assets/songs/background-aesthetic-lofi-vlog.mp3",
+        url: "/songs/background-aesthetic-lofi-vlog.mp3",
         cover: "https://picsum.photos/300?random=3"
     },
     {
@@ -68,7 +68,7 @@ export const songs = [
         title: "Alone Night Walk Beat",
         artist: "Lofi Beats",
         duration: "3:29",
-        url: "src/assets/songs/lofi-mysterious-alone-night-walking-beat.mp3",
+        url: "/songs/lofi-mysterious-alone-night-walking-beat.mp3",
         cover: "https://picsum.photos/300?random=4"
     },
     {
@@ -76,7 +76,7 @@ export const songs = [
         title: "Warm Chillhop Lofi",
         artist: "Lofi Beats",
         duration: "1:42",
-        url: "src/assets/songs/warm-chillhop-amp-cozy-lofi-background-music-for-relax-and-study.mp3",
+        url: "/songs/warm-chillhop-amp-cozy-lofi-background-music-for-relax-and-study.mp3",
         cover: "https://picsum.photos/300?random=5"
     },
     {
@@ -84,7 +84,7 @@ export const songs = [
         title: "Good Night Cozy Lofi Beats",
         artist: "Lofi Beats",
         duration: "2:27",
-        url: "src/assets/songs/good-night-lofi-cozy-chill-music.mp3",
+        url: "/songs/good-night-lofi-cozy-chill-music.mp3",
         cover: "https://picsum.photos/300?random=6"
     },
     {
@@ -92,7 +92,7 @@ export const songs = [
         title: "Cozy Warm Bedroom Lofi",
         artist: "Lofi Beats",
         duration: "2:24",
-        url: "src/assets/songs/cozy-bedroom-lofi-warm-amp-peaceful-chill-vibes.mp3",
+        url: "/songs/cozy-bedroom-lofi-warm-amp-peaceful-chill-vibes.mp3",
         cover: "https://picsum.photos/300?random=7"
     },
 ];
