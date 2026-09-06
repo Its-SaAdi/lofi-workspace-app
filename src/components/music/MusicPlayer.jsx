@@ -130,9 +130,17 @@ const MusicPlayer = () => {
     }
 
     // ─── Track selection (new song picked) ───────────────────────────
-    const selectTrack = (index) => {
+    const selectTrack = (index, trackOverride = null) => {
         didRestoreRef.current = true // already handled from here on
-        const track = tracks[index]
+        const track = trackOverride ?? tracks[index]
+
+        if (!track) {
+            console.error("Track not found:", {
+                index,
+                tracksLength: tracks.length
+            });
+            return
+        }
 
         dispatch(setCurrentTrack({ id: track.id, index }))
         dispatch(setIsPlaying(true))
@@ -228,11 +236,14 @@ const MusicPlayer = () => {
         }
 
         if (newTracks.length) {
-            setTracks(prev => {
-                const updated = [...prev, ...newTracks]
-                selectTrack(updated.length - 1)
-                return updated
-            })
+            setTracks(prev => [...prev, ...newTracks])
+
+            // The uploaded tracks begin at the old tracks.length
+            const newTrackIndex = tracks.length
+
+            // Pass the actual newly-created track so we don't
+            // depend on tracks state being updated synchronously.
+            selectTrack(newTrackIndex, newTracks[0])
         }
 
         e.target.value = ""
