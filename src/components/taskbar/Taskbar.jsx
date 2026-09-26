@@ -29,7 +29,7 @@ const Taskbar = () => {
 
     return (
         <div className="w-full flex justify-center">
-            <div id="taskbar" className="absolute bottom-5 w-[80%] mx-auto z-50 flex h-16 items-center justify-center space-x-3 p-2 backdrop-blur-xs bg-white/10 rounded-2xl shadow-lg border border-white/10">
+            <div id="taskbar" className="absolute bottom-5 mx-auto z-50 flex h-16 items-center justify-center space-x-3 p-2 px-3 backdrop-blur-xs bg-white/10 rounded-2xl shadow-lg border border-white/10">
 
                 {tools.map((tool) => {
                     const window = windows.find(win => win.id === tool.id);
